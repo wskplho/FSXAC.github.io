@@ -1,14 +1,29 @@
 o.png
-![o](https://cloud.githubusercontent.com/assets/4590693/5014345/375dcee0-6a52-11e4-9815-efbde61079cd.png)
+![o](https://cloud.githubusercontent.com/assets/4590693/5019579/f2f9081a-6a7d-11e4-8649-874f9b34dbca.png)
 
-oWins.png
-![owins](https://cloud.githubusercontent.com/assets/4590693/5014351/4efacc42-6a52-11e4-9f49-0e44af1e7365.png)
-
-tied.png
-![tied](https://cloud.githubusercontent.com/assets/4590693/5014354/53c223ba-6a52-11e4-80d3-ddfa8eccdd11.png)
+o_mobile.png
+![o_mobile](https://cloud.githubusercontent.com/assets/4590693/5019580/f54f9d5e-6a7d-11e4-9b5f-6fea66004b83.png)
 
 x.png
-![x](https://cloud.githubusercontent.com/assets/4590693/5014356/58200954-6a52-11e4-9a9b-ed0cc90cc6ea.png)
+![x](https://cloud.githubusercontent.com/assets/4590693/5019594/0ec3e484-6a7e-11e4-9152-6e4a31d9a272.png)
+
+x_mobile.png
+![x_mobile](https://cloud.githubusercontent.com/assets/4590693/5019595/10301f90-6a7e-11e4-9d0c-1145a657f343.png)
+
+oWins.png
+![owins](https://cloud.githubusercontent.com/assets/4590693/5019589/05b4a1ee-6a7e-11e4-85f8-7d58e4864d5a.png)
+
+oWins_mobile.png
+![owins_mobile](https://cloud.githubusercontent.com/assets/4590693/5019590/079b8ad6-6a7e-11e4-9385-b1277f5e91d4.png)
+
+tied.png
+![tied](https://cloud.githubusercontent.com/assets/4590693/5019582/f9dc4304-6a7d-11e4-9915-34f0ac08b051.png)
+
+tied_mobile.png
+![tied_mobile](https://cloud.githubusercontent.com/assets/4590693/5019584/fd4b7384-6a7d-11e4-8dea-3e50bf3bf6af.png)
 
 xWins.png
-![xwins](https://cloud.githubusercontent.com/assets/4590693/5014361/5e750f16-6a52-11e4-9c24-918f7f1a0972.png)
+![xwins](https://cloud.githubusercontent.com/assets/4590693/5019598/14270294-6a7e-11e4-9523-eb5046b3181a.png)
+
+xWins_mobile.png
+![xwins_mobile](https://cloud.githubusercontent.com/assets/4590693/5019599/173f47ac-6a7e-11e4-953f-4e9633352777.png)
