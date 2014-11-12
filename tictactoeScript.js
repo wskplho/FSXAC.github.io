@@ -289,7 +289,7 @@ document.getElementById('rightBottom').onclick = function(e) {
 //I can define & invoke functions
 function toggleCurrentPlayer(){
 	console.log(click);
-	if (click != 9){
+	if (click <= 9){
 		if (currentPlayer == "x"){
 			currentPlayer = "o";
 			document.getElementById("xIndicator").style.backgroundColor = "white";
