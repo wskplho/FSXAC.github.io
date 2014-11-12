@@ -1,0 +1,119 @@
+#text{
+	color: green;
+}
+
+/*THE TIC-TAC-TOE BOARD*/
+#gridLeft{
+	float: left;
+	display: inline;
+
+}
+
+#gridMiddle{
+	float: left;
+	display: inline;
+
+}
+#gridRight{
+	float:left;
+	display:inline;
+}
+
+
+#leftTop{
+	width: 200px;
+	height: 200px;
+	border-right: 2px solid;
+	border-bottom: 2px solid;
+}
+
+#leftMiddle{
+	width: 200px;
+	height: 200px;
+	border-right: 2px solid;
+	border-bottom: 2px solid;
+}
+
+#leftBottom{
+	width: 200px;
+	height: 200px;
+	border-right: 2px solid;
+}
+
+#middleTop{
+	width: 200px;
+	height: 200px;
+	border-right: 2px solid;
+	border-bottom: 2px solid;
+}
+#middleMiddle{
+	width: 200px;
+	height: 200px;
+	border-right: 2px solid;
+	border-bottom: 2px solid;
+}
+#middleBottom{
+	width: 200px;
+	height: 200px;
+	border-right: 2px solid;
+}
+
+#rightTop{
+	width: 200px;
+	height: 200px;
+	border-bottom: 2px solid;
+	
+}
+#rightMiddle{
+	width: 200px;
+	height: 200px;
+	border-bottom: 2px solid;
+	
+}
+#rightBottom{
+	width: 200px;
+	height: 200px;
+	
+}
+
+#displayed{
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 35px;
+}
+
+/*INDICATOR ICONS */ 
+
+.indicator{
+	float: right;
+	text-align: center;
+}
+
+#oIndicator{	
+	background-color: red;
+}
+#xIndicator{	
+	background-color: white;
+}
+
+
+/*Win Loss Ratio*/ 
+#winLoss{
+	float:right;
+	text-align: center;
+	padding-right: 100px;
+}
+
+#ratioPlayer{
+	font-size: 50px;
+}
+.ratioWin{
+	font-size: 50px;
+	color: green;
+}
+.ratioLoss{
+	font-size: 50px;
+	color: red;
+}
+
