@@ -46,7 +46,7 @@ var middleRow = ["n", "n", "n"];
 var bottomRow = ["n", "n", "n"];
 
 var currentPlayer = "o";
-var currentPlayerIcon = "images/o.png"
+var currentPlayerIcon = "https://cloud.githubusercontent.com/assets/4590693/5019579/f2f9081a-6a7d-11e4-8649-874f9b34dbca.png"
 
 var click = 0;		//stores the boxes that have been clicked so far so that when the last one is clicked, the current player indicator is different, and a win/tie/loss message is shown
 
@@ -72,11 +72,11 @@ document.getElementById('leftTop').onclick = function(e) {
 		var parent = document.getElementById('leftTop');
 		var child = parent.getElementsByTagName('img')[0];
 		if (mobile == true){
-			if (currentPlayerIcon == "images/x.png"){
-				currentPlayerIcon = "images/x_mobile.png";
+			if (currentPlayerIcon == "https://cloud.githubusercontent.com/assets/4590693/5019594/0ec3e484-6a7e-11e4-9152-6e4a31d9a272.png"){
+				currentPlayerIcon = "https://cloud.githubusercontent.com/assets/4590693/5019595/10301f90-6a7e-11e4-9d0c-1145a657f343.png";
 			}			
 			else{
-				currentPlayerIcon = "images/o_mobile.png";
+				currentPlayerIcon = "https://cloud.githubusercontent.com/assets/4590693/5019580/f54f9d5e-6a7d-11e4-9b5f-6fea66004b83.png";
 			}
 		}
 		child.src = currentPlayerIcon;
@@ -97,11 +97,11 @@ document.getElementById('leftMiddle').onclick = function(e) {
 		var parent = document.getElementById('leftMiddle');
 		var child = parent.getElementsByTagName('img')[0];
 		if (mobile == true){
-			if (currentPlayerIcon == "images/x.png"){
-				currentPlayerIcon = "images/x_mobile.png";
+			if (currentPlayerIcon == "https://cloud.githubusercontent.com/assets/4590693/5019594/0ec3e484-6a7e-11e4-9152-6e4a31d9a272.png"){
+				currentPlayerIcon = "https://cloud.githubusercontent.com/assets/4590693/5019595/10301f90-6a7e-11e4-9d0c-1145a657f343.png";
 			}			
 			else{
-				currentPlayerIcon = "images/o_mobile.png";
+				currentPlayerIcon = "https://cloud.githubusercontent.com/assets/4590693/5019580/f54f9d5e-6a7d-11e4-9b5f-6fea66004b83.png";
 			}
 		}
 		child.src = currentPlayerIcon;
@@ -122,11 +122,11 @@ document.getElementById('leftBottom').onclick = function(e) {
 		var parent = document.getElementById('leftBottom');
 		var child = parent.getElementsByTagName('img')[0];
 		if (mobile == true){
-			if (currentPlayerIcon == "images/x.png"){
-				currentPlayerIcon = "images/x_mobile.png";
+			if (currentPlayerIcon == "https://cloud.githubusercontent.com/assets/4590693/5019594/0ec3e484-6a7e-11e4-9152-6e4a31d9a272.png"){
+				currentPlayerIcon = "https://cloud.githubusercontent.com/assets/4590693/5019595/10301f90-6a7e-11e4-9d0c-1145a657f343.png";
 			}			
 			else{
-				currentPlayerIcon = "images/o_mobile.png";
+				currentPlayerIcon = "https://cloud.githubusercontent.com/assets/4590693/5019580/f54f9d5e-6a7d-11e4-9b5f-6fea66004b83.png";
 			}
 		}
 		child.src = currentPlayerIcon;
@@ -146,11 +146,11 @@ document.getElementById('middleTop').onclick = function(e) {
 		var parent = document.getElementById('middleTop');
 		var child = parent.getElementsByTagName('img')[0];
 		if (mobile == true){
-			if (currentPlayerIcon == "images/x.png"){
-				currentPlayerIcon = "images/x_mobile.png";
+			if (currentPlayerIcon == "https://cloud.githubusercontent.com/assets/4590693/5019594/0ec3e484-6a7e-11e4-9152-6e4a31d9a272.png"){
+				currentPlayerIcon = "https://cloud.githubusercontent.com/assets/4590693/5019595/10301f90-6a7e-11e4-9d0c-1145a657f343.png";
 			}			
 			else{
-				currentPlayerIcon = "images/o_mobile.png";
+				currentPlayerIcon = "https://cloud.githubusercontent.com/assets/4590693/5019580/f54f9d5e-6a7d-11e4-9b5f-6fea66004b83.png";
 			}
 		}
 		child.src = currentPlayerIcon;
@@ -170,11 +170,11 @@ document.getElementById('middleMiddle').onclick = function(e) {
 		var parent = document.getElementById('middleMiddle');
 		var child = parent.getElementsByTagName('img')[0];
 		if (mobile == true){
-			if (currentPlayerIcon == "images/x.png"){
-				currentPlayerIcon = "images/x_mobile.png";
+			if (currentPlayerIcon == "https://cloud.githubusercontent.com/assets/4590693/5019594/0ec3e484-6a7e-11e4-9152-6e4a31d9a272.png"){
+				currentPlayerIcon = "https://cloud.githubusercontent.com/assets/4590693/5019595/10301f90-6a7e-11e4-9d0c-1145a657f343.png";
 			}			
 			else{
-				currentPlayerIcon = "images/o_mobile.png";
+				currentPlayerIcon = "https://cloud.githubusercontent.com/assets/4590693/5019580/f54f9d5e-6a7d-11e4-9b5f-6fea66004b83.png";
 			}
 		}
 		child.src = currentPlayerIcon;
@@ -195,11 +195,11 @@ document.getElementById('middleBottom').onclick = function(e) {
 		var parent = document.getElementById('middleBottom');
 		var child = parent.getElementsByTagName('img')[0];
 		if (mobile == true){
-			if (currentPlayerIcon == "images/x.png"){
-				currentPlayerIcon = "images/x_mobile.png";
+			if (currentPlayerIcon == "https://cloud.githubusercontent.com/assets/4590693/5019594/0ec3e484-6a7e-11e4-9152-6e4a31d9a272.png"){
+				currentPlayerIcon = "https://cloud.githubusercontent.com/assets/4590693/5019595/10301f90-6a7e-11e4-9d0c-1145a657f343.png";
 			}			
 			else{
-				currentPlayerIcon = "images/o_mobile.png";
+				currentPlayerIcon = "https://cloud.githubusercontent.com/assets/4590693/5019580/f54f9d5e-6a7d-11e4-9b5f-6fea66004b83.png";
 			}
 		}
 		child.src = currentPlayerIcon;
@@ -219,11 +219,11 @@ document.getElementById('rightTop').onclick = function(e) {
 		var parent = document.getElementById('rightTop');
 		var child = parent.getElementsByTagName('img')[0];
 		if (mobile == true){
-			if (currentPlayerIcon == "images/x.png"){
-				currentPlayerIcon = "images/x_mobile.png";
+			if (currentPlayerIcon == "https://cloud.githubusercontent.com/assets/4590693/5019594/0ec3e484-6a7e-11e4-9152-6e4a31d9a272.png"){
+				currentPlayerIcon = "https://cloud.githubusercontent.com/assets/4590693/5019595/10301f90-6a7e-11e4-9d0c-1145a657f343.png";
 			}			
 			else{
-				currentPlayerIcon = "images/o_mobile.png";
+				currentPlayerIcon = "https://cloud.githubusercontent.com/assets/4590693/5019580/f54f9d5e-6a7d-11e4-9b5f-6fea66004b83.png";
 			}
 		}
 		child.src = currentPlayerIcon;
@@ -243,11 +243,11 @@ document.getElementById('rightMiddle').onclick = function(e) {
 		var parent = document.getElementById('rightMiddle');
 		var child = parent.getElementsByTagName('img')[0];
 		if (mobile == true){
-			if (currentPlayerIcon == "images/x.png"){
-				currentPlayerIcon = "images/x_mobile.png";
+			if (currentPlayerIcon == "https://cloud.githubusercontent.com/assets/4590693/5019594/0ec3e484-6a7e-11e4-9152-6e4a31d9a272.png"){
+				currentPlayerIcon = "https://cloud.githubusercontent.com/assets/4590693/5019595/10301f90-6a7e-11e4-9d0c-1145a657f343.png";
 			}			
 			else{
-				currentPlayerIcon = "images/o_mobile.png";
+				currentPlayerIcon = "https://cloud.githubusercontent.com/assets/4590693/5019580/f54f9d5e-6a7d-11e4-9b5f-6fea66004b83.png";
 			}
 		}
 		child.src = currentPlayerIcon;
@@ -268,11 +268,11 @@ document.getElementById('rightBottom').onclick = function(e) {
 		var child = parent.getElementsByTagName('img')[0];
 		
 		if (mobile == true){
-			if (currentPlayerIcon == "images/x.png"){
-				currentPlayerIcon = "images/x_mobile.png";
+			if (currentPlayerIcon == "https://cloud.githubusercontent.com/assets/4590693/5019594/0ec3e484-6a7e-11e4-9152-6e4a31d9a272.png"){
+				currentPlayerIcon = "https://cloud.githubusercontent.com/assets/4590693/5019595/10301f90-6a7e-11e4-9d0c-1145a657f343.png";
 			}			
 			else{
-				currentPlayerIcon = "images/o_mobile.png";
+				currentPlayerIcon = "https://cloud.githubusercontent.com/assets/4590693/5019580/f54f9d5e-6a7d-11e4-9b5f-6fea66004b83.png";
 			}
 		}
 		child.src = currentPlayerIcon;
@@ -296,18 +296,18 @@ function toggleCurrentPlayer(){
 			document.getElementById("oIndicator").style.backgroundColor = "red";
 			
 			if (mobile == true){
-				currentPlayerIcon = "images/o_mobile.png";
+				currentPlayerIcon = "https://cloud.githubusercontent.com/assets/4590693/5019580/f54f9d5e-6a7d-11e4-9b5f-6fea66004b83.png";
 			}
-			currentPlayerIcon = "images/o.png";
+			currentPlayerIcon = "https://cloud.githubusercontent.com/assets/4590693/5019579/f2f9081a-6a7d-11e4-8649-874f9b34dbca.png";
 		}
 		else{
 			currentPlayer = "x";
 			document.getElementById("oIndicator").style.backgroundColor = "white";
 			document.getElementById("xIndicator").style.backgroundColor = "red";
 			if (mobile == true){
-				currentPlayerIcon = "images/x_mobile.png";
+				currentPlayerIcon = "https://cloud.githubusercontent.com/assets/4590693/5019595/10301f90-6a7e-11e4-9d0c-1145a657f343.png";
 			}
-			currentPlayerIcon = "images/x.png";
+			currentPlayerIcon = "https://cloud.githubusercontent.com/assets/4590693/5019594/0ec3e484-6a7e-11e4-9152-6e4a31d9a272.png";
 		}
 	}
 	else{
@@ -464,24 +464,29 @@ function restartGame(winner){
 
     		
     		if (mobile == true){
-    			document.getElementById("winnerMessage").src="images/xWins_mobile.png";
+    			document.getElementById("winnerMessage").src="https://cloud.githubusercontent.com/assets/4590693/5019599/173f47ac-6a7e-11e4-953f-4e9633352777.png";
     		}
     		else{
-    			document.getElementById("winnerMessage").src="images/xWins.png";
+    			document.getElementById("winnerMessage").src="https://cloud.githubusercontent.com/assets/4590693/5019598/14270294-6a7e-11e4-9523-eb5046b3181a.png";
     		}
     	}
     	else if (oWins > xWins){
     		// O Wins
     		if (mobile == true){
-    			document.getElementById("winnerMessage").src="images/oWins_mobile.png";
+    			document.getElementById("winnerMessage").src="https://cloud.githubusercontent.com/assets/4590693/5019590/079b8ad6-6a7e-11e4-9385-b1277f5e91d4.png";
     		}
     		else{
-    			document.getElementById("winnerMessage").src="images/oWins.png";
+    			document.getElementById("winnerMessage").src="https://cloud.githubusercontent.com/assets/4590693/5019589/05b4a1ee-6a7e-11e4-85f8-7d58e4864d5a.png";
     		}
     	}
     	else{
     		//Tie
-    		document.getElementById("winnerMessage").src="images/tied_mobile.png";
+    		if (mobile == true){
+    			document.getElementById("winnerMessage").src="https://cloud.githubusercontent.com/assets/4590693/5019584/fd4b7384-6a7d-11e4-8dea-3e50bf3bf6af.png";
+    		}
+    		else{
+    			document.getElementById("winnerMessage").src="https://cloud.githubusercontent.com/assets/4590693/5019582/f9dc4304-6a7d-11e4-9915-34f0ac08b051.png";
+    		}
     	}
 
 
