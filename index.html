@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<title> Tic-Tac-Toe </title>
+		<link rel="stylesheet" type="text/css" href="tictactoeStyles.css">
+
+	</head>
+
+	<body>
+	<div id="ticTacToeBoard">
+		<div id="gridLeft">
+			<div id="leftTop"><img id="displayed"/></div>
+			<div id="leftMiddle"><img id="displayed" /></div>
+			<div id="leftBottom"><img id="displayed"/></div>
+		</div>
+	
+		<div id="gridMiddle">
+			<div id="middleTop"><img id="displayed"/></div>
+			<div id="middleMiddle"><img id="displayed"/></div>
+			<div id="middleBottom"><img id="displayed"/></div>
+		</div>
+	
+		<div id="gridRight">
+			<div id="rightTop"><img id="displayed"/></div>
+			<div id="rightMiddle"><img id="displayed"/></div>
+			<div id="rightBottom"><img id="displayed"/></div>
+		</div>
+	</div>
+
+	<div class="indicator">
+		<h3> CURRENT PLAYER </h3>
+		<img id="xIndicator" src="https://cloud.githubusercontent.com/assets/4590693/5014356/58200954-6a52-11e4-9a9b-ed0cc90cc6ea.png" />
+		<img id="oIndicator" src="https://cloud.githubusercontent.com/assets/4590693/5014345/375dcee0-6a52-11e4-9815-efbde61079cd.png"/>
+	</div>
+	<div id="winLoss">
+		<h3> WIN:LOSS RATIO </h3>
+		<h1><span id="ratioPlayer">O</span> -  <span id="oWins" class="ratioWin">0</span>:<span id="oLosses" class="ratioLoss">0</span></h1>
+		<h1><span id="ratioPlayer">X</span> - <span id="xWins" class="ratioWin">0</span>:<span id="xLosses" class="ratioLoss">0</span></h1>
+
+	</div>
+	<img id="winnerMessage"/>
+
+	<script src="tictactoeScript.js"></script>
+
+	</body>
+</html>
