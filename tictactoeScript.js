@@ -71,11 +71,16 @@ document.getElementById('leftTop').onclick = function(e) {
 		//I can produce output for the user - changes the image of each grid depending on which user clicked which grid
 		var parent = document.getElementById('leftTop');
 		var child = parent.getElementsByTagName('img')[0];
-		child.src = currentPlayerIcon;
 		if (mobile == true){
-			child.style.width = '50px';
-			child.style.height = '50px';
+			if (currentPlayerIcon == "images/x.png"){
+				currentPlayerIcon = "images/x_mobile.png";
+			}			
+			else{
+				currentPlayerIcon = "images/o_mobile.png";
+			}
 		}
+		child.src = currentPlayerIcon;
+		
 		topRow[0] = currentPlayer;	//Updating the grid array to show that the spot has been filled 
 		checkWin();
 		click += 1;
@@ -91,11 +96,16 @@ document.getElementById('leftMiddle').onclick = function(e) {
 		
 		var parent = document.getElementById('leftMiddle');
 		var child = parent.getElementsByTagName('img')[0];
-		child.src = currentPlayerIcon;
 		if (mobile == true){
-			child.style.width = '50px';
-			child.style.height = '50px';
+			if (currentPlayerIcon == "images/x.png"){
+				currentPlayerIcon = "images/x_mobile.png";
+			}			
+			else{
+				currentPlayerIcon = "images/o_mobile.png";
+			}
 		}
+		child.src = currentPlayerIcon;
+		
 
 		middleRow[0]= currentPlayer;	//Updating the grid array to show that the spot has been filled 
 		checkWin();
@@ -111,11 +121,16 @@ document.getElementById('leftBottom').onclick = function(e) {
 		
 		var parent = document.getElementById('leftBottom');
 		var child = parent.getElementsByTagName('img')[0];
-		child.src = currentPlayerIcon;
 		if (mobile == true){
-			child.style.width = '50px';
-			child.style.height = '50px';
+			if (currentPlayerIcon == "images/x.png"){
+				currentPlayerIcon = "images/x_mobile.png";
+			}			
+			else{
+				currentPlayerIcon = "images/o_mobile.png";
+			}
 		}
+		child.src = currentPlayerIcon;
+		
 		bottomRow[0]= currentPlayer;	//Updating the grid array to show that the spot has been filled 
 		checkWin();
 		click += 1;
@@ -130,11 +145,16 @@ document.getElementById('middleTop').onclick = function(e) {
 		
 		var parent = document.getElementById('middleTop');
 		var child = parent.getElementsByTagName('img')[0];
-		child.src = currentPlayerIcon;
 		if (mobile == true){
-			child.style.width = '50px';
-			child.style.height = '50px';
+			if (currentPlayerIcon == "images/x.png"){
+				currentPlayerIcon = "images/x_mobile.png";
+			}			
+			else{
+				currentPlayerIcon = "images/o_mobile.png";
+			}
 		}
+		child.src = currentPlayerIcon;
+		
 		topRow[1]= currentPlayer;	//Updating the grid array to show that the spot has been filled 
 		checkWin();
 		click += 1;
@@ -149,11 +169,16 @@ document.getElementById('middleMiddle').onclick = function(e) {
 		
 		var parent = document.getElementById('middleMiddle');
 		var child = parent.getElementsByTagName('img')[0];
-		child.src = currentPlayerIcon;
 		if (mobile == true){
-			child.style.width = '50px';
-			child.style.height = '50px';
+			if (currentPlayerIcon == "images/x.png"){
+				currentPlayerIcon = "images/x_mobile.png";
+			}			
+			else{
+				currentPlayerIcon = "images/o_mobile.png";
+			}
 		}
+		child.src = currentPlayerIcon;
+		
 		middleRow[1]= currentPlayer;	//Updating the grid array to show that the spot has been filled 
 		checkWin();
 		click += 1;
@@ -169,11 +194,16 @@ document.getElementById('middleBottom').onclick = function(e) {
 		
 		var parent = document.getElementById('middleBottom');
 		var child = parent.getElementsByTagName('img')[0];
-		child.src = currentPlayerIcon;
 		if (mobile == true){
-			child.style.width = '50px';
-			child.style.height = '50px';
+			if (currentPlayerIcon == "images/x.png"){
+				currentPlayerIcon = "images/x_mobile.png";
+			}			
+			else{
+				currentPlayerIcon = "images/o_mobile.png";
+			}
 		}
+		child.src = currentPlayerIcon;
+		
 		bottomRow[1]= currentPlayer;	//Updating the grid array to show that the spot has been filled 
 		checkWin();
 		click += 1;
@@ -188,11 +218,16 @@ document.getElementById('rightTop').onclick = function(e) {
 		
 		var parent = document.getElementById('rightTop');
 		var child = parent.getElementsByTagName('img')[0];
-		child.src = currentPlayerIcon;
 		if (mobile == true){
-			child.style.width = '50px';
-			child.style.height = '50px';
+			if (currentPlayerIcon == "images/x.png"){
+				currentPlayerIcon = "images/x_mobile.png";
+			}			
+			else{
+				currentPlayerIcon = "images/o_mobile.png";
+			}
 		}
+		child.src = currentPlayerIcon;
+		
 		topRow[2]= currentPlayer;	//Updating the grid array to show that the spot has been filled 
 		checkWin();
 		click += 1;
@@ -207,11 +242,16 @@ document.getElementById('rightMiddle').onclick = function(e) {
 		
 		var parent = document.getElementById('rightMiddle');
 		var child = parent.getElementsByTagName('img')[0];
-		child.src = currentPlayerIcon;
 		if (mobile == true){
-			child.style.width = '50px';
-			child.style.height = '50px';
+			if (currentPlayerIcon == "images/x.png"){
+				currentPlayerIcon = "images/x_mobile.png";
+			}			
+			else{
+				currentPlayerIcon = "images/o_mobile.png";
+			}
 		}
+		child.src = currentPlayerIcon;
+		
 		middleRow[2]= currentPlayer;	//Updating the grid array to show that the spot has been filled 
 		checkWin();	
 		click += 1;
@@ -226,11 +266,17 @@ document.getElementById('rightBottom').onclick = function(e) {
 		
 		var parent = document.getElementById('rightBottom');
 		var child = parent.getElementsByTagName('img')[0];
-		child.src = currentPlayerIcon;
+		
 		if (mobile == true){
-			child.style.width = '50px';
-			child.style.height = '50px';
+			if (currentPlayerIcon == "images/x.png"){
+				currentPlayerIcon = "images/x_mobile.png";
+			}			
+			else{
+				currentPlayerIcon = "images/o_mobile.png";
+			}
 		}
+		child.src = currentPlayerIcon;
+
 		bottomRow[2]= currentPlayer;	//Updating the grid array to show that the spot has been filled 
 		checkWin();		
 		click += 1;
@@ -248,12 +294,19 @@ function toggleCurrentPlayer(){
 			currentPlayer = "o";
 			document.getElementById("xIndicator").style.backgroundColor = "white";
 			document.getElementById("oIndicator").style.backgroundColor = "red";
+			
+			if (mobile == true){
+				currentPlayerIcon = "images/o_mobile.png";
+			}
 			currentPlayerIcon = "images/o.png";
 		}
 		else{
 			currentPlayer = "x";
 			document.getElementById("oIndicator").style.backgroundColor = "white";
 			document.getElementById("xIndicator").style.backgroundColor = "red";
+			if (mobile == true){
+				currentPlayerIcon = "images/x_mobile.png";
+			}
 			currentPlayerIcon = "images/x.png";
 		}
 	}
@@ -408,15 +461,27 @@ function restartGame(winner){
 
     	if (xWins > oWins){
     		// X Wins
-    		document.getElementById("winnerMessage").src="images/xWins.png";
+
+    		
+    		if (mobile == true){
+    			document.getElementById("winnerMessage").src="images/xWins_mobile.png";
+    		}
+    		else{
+    			document.getElementById("winnerMessage").src="images/xWins.png";
+    		}
     	}
     	else if (oWins > xWins){
     		// O Wins
-    		document.getElementById("winnerMessage").src="images/oWins.png";
+    		if (mobile == true){
+    			document.getElementById("winnerMessage").src="images/oWins_mobile.png";
+    		}
+    		else{
+    			document.getElementById("winnerMessage").src="images/oWins.png";
+    		}
     	}
     	else{
     		//Tie
-    		document.getElementById("winnerMessage").src="images/tied.png";
+    		document.getElementById("winnerMessage").src="images/tied_mobile.png";
     	}
 
 
