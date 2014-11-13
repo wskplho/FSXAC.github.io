@@ -1,3 +1,5 @@
+console.log("Version 9000");
+
 var isMobile = {
     Android: function() {
         return navigator.userAgent.match(/Android/i);
