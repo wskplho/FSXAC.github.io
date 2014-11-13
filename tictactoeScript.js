@@ -82,8 +82,9 @@ document.getElementById('leftTop').onclick = function(e) {
 		child.src = currentPlayerIcon;
 		
 		topRow[0] = currentPlayer;	//Updating the grid array to show that the spot has been filled 
-		checkWin();
 		click += 1;
+		checkWin();
+		
 		toggleCurrentPlayer();
 
 	}
@@ -108,8 +109,9 @@ document.getElementById('leftMiddle').onclick = function(e) {
 		
 
 		middleRow[0]= currentPlayer;	//Updating the grid array to show that the spot has been filled 
-		checkWin();
 		click += 1;
+		checkWin();
+		
 		toggleCurrentPlayer();
 		
 	}
@@ -132,8 +134,9 @@ document.getElementById('leftBottom').onclick = function(e) {
 		child.src = currentPlayerIcon;
 		
 		bottomRow[0]= currentPlayer;	//Updating the grid array to show that the spot has been filled 
-		checkWin();
 		click += 1;
+		checkWin();
+		
 		toggleCurrentPlayer();
 			
 	}
@@ -156,8 +159,9 @@ document.getElementById('middleTop').onclick = function(e) {
 		child.src = currentPlayerIcon;
 		
 		topRow[1]= currentPlayer;	//Updating the grid array to show that the spot has been filled 
-		checkWin();
 		click += 1;
+		checkWin();
+		
 		toggleCurrentPlayer();
 			
 	}
@@ -180,8 +184,9 @@ document.getElementById('middleMiddle').onclick = function(e) {
 		child.src = currentPlayerIcon;
 		
 		middleRow[1]= currentPlayer;	//Updating the grid array to show that the spot has been filled 
-		checkWin();
 		click += 1;
+		checkWin();
+		
 		toggleCurrentPlayer();
 		
 	}
@@ -205,8 +210,9 @@ document.getElementById('middleBottom').onclick = function(e) {
 		child.src = currentPlayerIcon;
 		
 		bottomRow[1]= currentPlayer;	//Updating the grid array to show that the spot has been filled 
-		checkWin();
 		click += 1;
+		checkWin();
+		
 		toggleCurrentPlayer();
 		
 	}
@@ -229,8 +235,9 @@ document.getElementById('rightTop').onclick = function(e) {
 		child.src = currentPlayerIcon;
 		
 		topRow[2]= currentPlayer;	//Updating the grid array to show that the spot has been filled 
-		checkWin();
 		click += 1;
+		checkWin();
+		
 		toggleCurrentPlayer();
 		
 	}
@@ -253,8 +260,9 @@ document.getElementById('rightMiddle').onclick = function(e) {
 		child.src = currentPlayerIcon;
 		
 		middleRow[2]= currentPlayer;	//Updating the grid array to show that the spot has been filled 
-		checkWin();	
 		click += 1;
+		checkWin();	
+		
 		toggleCurrentPlayer();
 			
 	}
@@ -278,8 +286,9 @@ document.getElementById('rightBottom').onclick = function(e) {
 		child.src = currentPlayerIcon;
 
 		bottomRow[2]= currentPlayer;	//Updating the grid array to show that the spot has been filled 
-		checkWin();		
 		click += 1;
+		checkWin();		
+		
 		//I can define & invoke functions
 		toggleCurrentPlayer();
 			
@@ -320,9 +329,8 @@ function toggleCurrentPlayer(){
 }
 
 function checkWin(){
-	//Checks after 5 clicks if someone has won - disables game if someone has won
-	//Minimum # of clicks to win a game = 5 but this function is called before the click counter is updated so 4
-	if (click >= 4){
+
+	if (click >= 5){
 
 		//Horizontal
 		if (topRow[0] == "o" & topRow[1] =="o" & topRow[2] =="o"){
@@ -415,15 +423,11 @@ function restartGame(winner){
 	else{
 		var r = confirm("TIED ~ RESTART GAME?");
 	}
-
+	//Resets the number of clicks back to 0
+  	click = 0;
+  	console.log("gamereset");
 	if (r == true) {
 		//OK pressed
-
-		
-
-    	//Resets the number of clicks back to 0
-  		click = 0;
-
 
   		//Clears the list grid
 
@@ -450,9 +454,6 @@ function restartGame(winner){
 		}
 		document.getElementById("oIndicator").style.backgroundColor = "red";
 		document.getElementById("xIndicator").style.backgroundColor = "white";
-
-
-
 
 	} else {
     	//Cancel Pressed
