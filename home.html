@@ -12,9 +12,11 @@
 	<body>
 		<div id = "background_image_container"></div>
 		<div id = "title_container">
-			<a href="game.html" style = "position:fixed; z-index:1">
+			<!--GAME BUTTON -->
+			<a onclick = "goGame()" style = "position:fixed; z-index:1">
 				<img src = "secret.gif" style = "height:20px; width:20px">
 			</a>
+			<!--TITLE-->
 			<div id = "title_logo_container">
 				<img src = "title_logo.png" style = "display:block; height:90%; margin-left:auto; margin-right:auto;
 				top:50%; margin-top:10px" href = "home.html">
@@ -93,6 +95,12 @@
 	
 		function goHome(ab) {
 			alert(ab);
+		}
+		
+		function goGame() {
+			if (isLoggedIn) {
+				window.location.replace("game.html");
+			}
 		}
 		
 		function login() {

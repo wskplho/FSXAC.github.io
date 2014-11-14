@@ -1,5 +1,5 @@
 var isLoggedIn = false;
-
+var currentPlayer = "black";
 
 // creates a 2D list for the grid
 var grid = [];
@@ -44,6 +44,75 @@ function login() {
 	login_username.value = "";
 	login_password.value = "";	
 }
+
+// add a block to the board
+function add(placement) {
+	if (currentPlayer == "black") {
+		switch(placement) {
+			
+			case "top_left":
+				grid[row][col].src = "game\\black_top_left.png";
+				break;
+			case "top_right":
+				grid[row][col].src = "game\\black_top_right.png";
+				break;
+			case "top":
+				grid[row][col].src = "game\\black_top.png";
+				break;
+			case "left":
+				grid[row][col].src = "game\\black_left.png";
+				break;
+			case "right":
+				grid[row][col].src = "game\\black_right.png";
+				break;
+			case "bottom":
+				grid[row][col].src = "game\\black_bottom.png";
+				break;
+			case "bottom_left":
+				grid[row][col].src = "game\\black_bottom_left.png";
+				break;
+			case "bottom_right":
+				grid[row][col].src = "game\\black_bottom_right.png";
+				break;
+			case "center":
+				grid[row][col].src = "game\\black.png";
+				break;
+		}	
+	} else if (currentPlayer == "white") {
+		switch(placement) {
+			
+			case "top_left":
+				grid[row][col].src = "game\\white_top_left.png";
+				break;
+			case "top_right":
+				grid[row][col].src = "game\\white_top_right.png";
+				break;
+			case "top":
+				grid[row][col].src = "game\\white_top.png";
+				break;
+			case "left":
+				grid[row][col].src = "game\\white_left.png";
+				break;
+			case "right":
+				grid[row][col].src = "game\\white_right.png";
+				break;
+			case "bottom":
+				grid[row][col].src = "game\\white_bottom.png";
+				break;
+			case "bottom_left":
+				grid[row][col].src = "game\\white_bottom_left.png";
+				break;
+			case "bottom_right":
+				grid[row][col].src = "game\\white_bottom_right.png";
+				break;
+			case "center":
+				grid[row][col].src = "game\\white.png";
+				break;
+		}	
+	}
+}
+
+// check if a person wins
 
 function gridAction(elementId) {
 	var id = elementId;
@@ -102,29 +171,36 @@ function gridAction(elementId) {
 	// change texture
 	if (row == 0) {
 		if (col == 0) {
-			// top left
+			add("top_left");
 		}
 		else if (col == 14) {
-			// top right
+			add("top_right");
 		} else {
-			grid[row][col].src = "game\\black_top.png";
+			add("top");
 		}
 	} else if (row == 14) {
 		if (col == 0) {
-			grid[row][col].src = "game\\black_bottom_left.png";
+			add("bottom_left");
 		}
 		else if (col == 14) {
-			grid[row][col].src = "game\\black_bottom_right.png";
+			add("bottom_right");
 		} else {
-			grid[row][col].src = "game\\black_bottom.png";
+			add("bottom");
 		}
 	} else {
 		if (col == 0) {
-			grid[row][col].src = "game\\black_left.png";
+			add("left");
 		} else if (col == 14) {
-			grid[row][col].src = "game\\black_right.png";
+			add("right");
 		} else {
-			grid[row][col].src = "game\\black.png";
+			add("center");
 		}
+	}
+	
+	// switch player
+	if (currentPlayer == "black") {
+		currentPlayer = "white";
+	} else if (currentPlayer == "white") {
+		currentPlayer = "black";
 	}
 }
