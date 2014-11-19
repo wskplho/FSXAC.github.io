@@ -7,7 +7,6 @@ h1{
 h2 {
 	color: rgba(0, 255, 0, 1);
 	font-family: consolas;
-	margin-top: 100px;
 }
 
 hr {
@@ -17,6 +16,13 @@ hr {
 p {
 	color: rgba(0, 255, 0, 1);
 	font-family: consolas;
+}
+
+a {
+	color: rgba(0, 255, 0, 1);
+	font-family: consolas;
+	font-size: 24px;
+	margin: 40px;
 }
 
 #pageTitle {
@@ -31,4 +37,24 @@ p {
 	width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+#menu_content {
+	text-align: center;
+}
+
+#navigation {
+	text-align: center;
+	background-color: rgba(0, 255, 0, 1);
+	margin: 20px;
+}
+
+.entry {
+	background-color: rgba(150, 250, 150, 0.05);
+	padding: 12px;
+	margin-bottom: 20px;
+}
+
+.navigation {
+	color: rgba(0, 0, 0, 1);
 }
