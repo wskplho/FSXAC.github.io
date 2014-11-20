@@ -2,13 +2,26 @@
 
 <html lang = "EN-US" style = "background-color:black">
 	<head>
+<<<<<<< HEAD
+		<title> Mansur He's Web </title>
+=======
 		<title> Mansur Space Program </title>
+>>>>>>> origin/master
 		<meta charset = "UTF-8">
-		<link rel = "stylesheet" type = "text/css" href = "style.css">
-		<link rel = "shortcut icon" href = "home.ico">
+		<link rel = "stylesheet" type = "text/css" href = "main_style.css">
+		<link rel = "shortcut icon" href = "logo.png">
+		
+		<link href='http://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
 	</head>
 	
 	<body>
+<<<<<<< HEAD
+		<!-- background image -->
+		<div style = "position:fixed; z-index:-1; left:0; top:0; width:100%; height: 100%;
+		background-image:url('background_image.png'); background-repeat:no-repeat;
+		background-attachment:fixed; background-size:100%; opacity:1;"></div>
+=======
 		<div id = "background_image_container"></div>
 		<div id = "title_container">
 			<div id = "title_logo_container">
@@ -61,32 +74,36 @@
 	</body>
 	<script>
 		var isLoggedIn = false;
+>>>>>>> origin/master
 	
-		function goHome(ab) {
-			alert(ab);
-		}
+		<!-- this div will contain everything -->
+		<div id = "main">
+			
+			<!-- title div -->
+			<div id = "title_container">
+				<a href = "home.html">
+					<img id = "logo" src = "logo.png" height = 100px style = "float: left"></img>
+				</a>
+				<h1 class = "TitleHeading">MANSUR HE</h1>
+			</div>
 		
-		function login() {
-			var login_username = document.getElementById("login_name");		// user name text field
-			var login_password = document.getElementById("login_pass");		// password field
-			var login_status = document.getElementById("login_error")		// message
-			var background_image = document.getElementById("background_image_container");	// background image
-			var login_container = document.getElementById("login_container"); // login div
+			<!-- navigation -->
+			<ul class = "Nav">
+				<li class = "NavBlock"> <a class = "NavLink" 
+				href = "#projects.html">projects</a></li>
+				<li class = "NavBlock"> <a class = "NavLink" 
+				href = "#video.html">video</a></li>
+				<li class = "NavBlock"> <a class = "NavLink" 
+				href = "arduino.html">arduino</a></li>
+				<li class = "NavBlock"> <a class = "NavLink" 
+				href = "#undef">undefined</a></li>
+				<li class = "NavBlock"> <a class = "NavLink" 
+				href = "#undef">undefined</a></li>
+			</ul>
 			
-			if (login_username.value == "m.he3" && login_password.value == "7355608") {
-				background_image.style.backgroundImage = "url(background_logged.jpg)";
-				login_status.innerHTML = "";
-				login_container.style.visibility = "hidden";
-				
-				isLoggedIn = true;
-			} else {
-				login_status.innerHTML = "Invalid Login";
-				background_image.style.backgroundImage = "url(background_image.jpg)";
-			}
-			
-			// clear the check box and text box
-			login_username.value = "";
-			login_password.value = "";	
-		}
-	</script>
-</html>
+			<!-- main body -->
+			<div id = "content">
+				<a href = "arduino\\journal\\menu.html">CLICK HERE TO GO TO JOURNAL</a>
+			</div>
+		</div>
+	</body>
