@@ -26,7 +26,7 @@ background-color: black;">
 		
 		<div id = "content">
 		
-			<div class = "entry">
+			<div class = "Entry">
 				<h2>15:10 PM 2014-11-18</h2>
 				<hr></hr>
 				<p>I got the EMF detector (theremin) slightly working. By that, I mean not working at all because the output is unpredictable. </p>
@@ -40,7 +40,7 @@ background-color: black;">
 				<p>The Arduino takes analog input from the probe and compares it with a set number, this number can be set to change the offset of sensitivity. The comparison then makes the LED and the speaker turn on and off.</p>
 			</div>
 			
-			<div class  = "entry">
+			<div class  = "Entry">
 				<h2>21:11 PM 2014-11-18</h2>
 				<hr></hr>
 				<p>I started a new project. The Project 02 from the official project book. Because I only have one set of Arduino, it means that I'll have to the theremin apart.
@@ -49,7 +49,7 @@ background-color: black;">
 				how it will all flow out in my head. I also learned about buttons and how they should be placed, well, at least for the very basic button included in the kit. </p>
 			</div>
 			
-			<div class = "entry">
+			<div class = "Entry">
 				<h2>21:13 2014-11-18</h2>
 				<hr></hr>
 				<p>Some small inconvenience: I didn't want to use the pre-made jumper wires came in the kit because, I don't know, I feel cheap?</p>
@@ -57,7 +57,7 @@ background-color: black;">
 				<p>Until I have more wire supplies, I guess I'll  to keep doing these infuriating work.</p>
 			</div>
 			
-			<div class = "entry">
+			<div class = "Entry">
 				<h2>21:19 2014-11-18</h2>
 				<hr></hr>
 				<p>Phew! Just finished Project 02. It didn't take a lot of time, but still fun.</p>
@@ -69,9 +69,57 @@ background-color: black;">
 				<img src = "img/IMG_0199.JPG" width = 100%></img>
 			</div>
 			
-			<div class = "entry">
-				<h2></h2>
-				
+			<div class = "Entry">
+				<h2>21:29 2014-11-18</h2>
+				<p>So I am learning a lot right now, especially the software side of the Arduino. 
+				Just things such as syntax for doing things.</p>
+				<p>For instance, I learned how to make a <u>constant</u> in Arduino by just appending 
+				<code class = "Single">const</code> in front of the variable declaration.</p>
+				<p>I also learned how to use <u>for loops</u> in Arduino's programming language. 
+				It's actually the same as Java, and just as identical as Javascript. This is how you make 
+				a <u>for loop</u>:</p>
+				<pre><code>
+for (int i = 0; i < 10; i++) {
+	// execution code here
+}
+				</code></pre>
+				<p>Now that I know <u>for loops</u>, instead of writing out all the code to open up
+				some new pins to output line by line:</p>
+				<pre><code>
+pinMode(1, OUTPUT);
+pinMode(2, OUTPUT);
+pinMode(3, OUTPUT);
+pinMode(4, OUTPUT);
+pinMode(5, OUTPUT);
+pinMode(6, OUTPUT);
+pinMode(7, OUTPUT);
+pinMode(8, OUTPUT);
+pinMode(9, OUTPUT);
+pinMode(10, OUTPUT);
+				</code></pre>
+				<p>This is what I will do from now on:</p>
+				<pre><code>
+for (int i = 1; i <= 10; i++) {
+	pinMode(i, OUTPUT);
+}	
+				</code></pre>
+				<p>Saves a lot of time and effort.</p>
+			</div>
+			
+			<div class = "Entry">
+				<h2>21:38 PM 2014-11-18</h2>
+				<p>Did you know Arduino IDE has a console? WHAT!?</p>
+				<p>That's right, it is called a <u>Serial</u>. And it is used for debugging 
+				as well as communicating from Arduino to the user since there is no built in console 
+				screen on the Arduino itself.</p>
+				<p>To initiate the <u>Serial</u>, simply type in <code class = "Single">
+				Serial.open(9600);</code> into the <code class = "Single">void setup()</code> function. 
+				And that will open up a serial port between the computer and the Arduino at the communication 
+				speed of 9600 bits per second.</p>
+				<p>At the time I still have not played too much with the <u>Serial</u> yet but I know that 
+				it is also possible to print out stuff like strings or any other kind of information. And this 
+				is done by using the <code class = "Single">Serial.print(msg);</code> function where 
+				<code class = "Single">msg</code> is the output.</p>
 			</div>
 		</div>
 	</body>
