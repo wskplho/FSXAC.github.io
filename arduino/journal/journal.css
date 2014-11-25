@@ -9,6 +9,12 @@ h2 {
 	font-family: consolas;
 }
 
+h3 {
+	color: rgba(0, 255, 0, 1);
+	font-family: consolas;
+	font-size: 28px;
+}
+
 hr {
 	border-color: rgba(0, 255, 0, 1);
 }
