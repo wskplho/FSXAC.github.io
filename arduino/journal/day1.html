@@ -66,7 +66,38 @@ background-color: black;">
 				<p>I am planning on expanding this project, probably more LEDs. I was thinking somewhere in vicinity of 10 or more LEDs where the project only has 3. This will both let me develop further understanding on
 				Arduino programming as well as circuitry skills. (More electronic components on a fixed size of breadboard means I need to be more compact with my wiring)</p>
 				</p>
-				<img src = "img/IMG_0199.JPG" width = 100%></img>
+				<center><img class = "FrameImage" src = "img/IMG_0199.JPG" width = 100%></img></center>
+				
+				<pre><code>
+int buttonState = LOW;				// button input, LOW is off, HIGH is on
+int lightDelay = 500;				// how long the light will be on before switched
+				
+void setup() {
+	pinMode(2, INPUT);			// initializes the digital pins for IO
+	pinMode(3, OUTPUT);
+	pinMode(4, OUTPUT);
+	pinMode(5, OUTPUT);
+}
+
+void loop() {
+	buttonState = digitalRead(2);		// get button signal
+	if (buttonState == LOW) {		// if the button is not pressed:
+		digitalWrite(3, HIGH);		// make the LED on pin 3 lit
+		digitalWrite(4, LOW);
+		digitalWrite(5, LOW);
+	} else {				// if the button is pressed: 
+		digitalWrite(5, HIGH);		// cycle through all the LEDs
+		digitalWrite(3, LOW);
+		digitalWrite(4, LOW);
+		delay(lightDelay);		// delay lightDelay
+		
+		digitalWrite(4, HIGH);
+		digitalWrite(3, LOW);
+		digitalWrite(5, LOW);
+		delay(lightDelay);
+	}
+}
+				</code></pre>
 			</div>
 			
 			<div class = "Entry">
