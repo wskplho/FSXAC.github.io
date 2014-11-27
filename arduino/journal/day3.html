@@ -25,7 +25,7 @@ background-color: black;">
 		</div>
 		
 		<div id = "content">
-			<h3>> Traffic Lights <</h3>
+			<h3>// Traffic Lights //</h3>
 			<div class = "Entry">
 				<h2>11:30 2014-11-22</h2>
 				<hr/>
@@ -59,8 +59,84 @@ background-color: black;">
 				<h2> 17:23 2014-11-22 </h2>
 				<hr/>
 				<p>CONSTRUCTION COMPLETE!</p>
-				<center><img src = "img/traffic_1_schem" alt = "SCHEMATICS"/></center>
-				<p>Now it's up to finish coding.</p>
+				<center><img class = "FrameImage" src = "img/traffic_1_schem.png" width = 75%/></center>
+				<p>Now it's up to finish coding. It's not too hard, but I get alot of confusions in the <code>void loop()</code>
+				function because the function itself is looped, and I constantly forget that simply because it looks like a 
+				stand-alone function.</p>
+			</div>
+			
+			<div class = "Entry">
+				<h2> 18:58 2014-11-22 </h2>
+				<hr/>
+				<p> After countless trials, debugging, fixing, waiting, testing... The code is finally finished for this first project 
+				of traffic lights. Here it is below: </p>
+				<pre><code>
+// ==variables==
+// pins
+int red = 2;
+int yellow = 3;
+int green = 4;
+int light = A5;
+
+// light
+int lightLevel = 0;
+int lightInput;
+int lightRestriction = 100;
+
+// time
+int yellowTime = 3000;
+int redTime = 20000;
+
+// ==bare minimums==
+void setup() {
+	// setup operations that only run once
+	pinMode(red, OUTPUT);
+	pinMode(yellow, OUTPUT);
+	pinMode(green, OUTPUT);
+	
+	// serial
+	Serial.begin(9600);
+	
+	// calibrates the light sensor for 2 seconds
+	for (int i = 0; i < 50; i++) {
+		// take the average light level
+		int newLightLevel = analogRead(light);
+		lightLevel = (lightLevel + newLightLevel) / 2;
+		delay(40);
+		
+		Serial.println("Calibrating Light Sensor: " + lightLevel.toString());
+	}
+	Serial.println("Light Sensor Calibrated: " + 
+}
+
+void loop() {
+	lightInput = analogRead(light);
+	
+	// without signals, green light is always on
+	digitalWrite(green, HIGH);
+	
+	if (lightInput < (lightLevel - lightRestriction)) {
+		stopLight();
+	}
+}
+
+// ==called when photocell senses shadow==
+void stopLight() {
+	// yellow light
+	digitalWrite(green, LOW);
+	digitalWrite(yellow, HIGH);
+	delay(yellowTime);
+	
+	// red light
+	digitalWrite(yellow, LOW);
+	digitalWrite(red, HIGH);
+	delay(redTime);
+	
+	// turn the red light off and go back to green
+	digitalWrite(red, LOW);
+}
+				</pre></code>
+				<p>Here is a video of it working:</p>
 			</div>
 			<a href = "#top" style = "font-size: 16px; float:right; margin-bottom: 20px;">GO TO TOP</a>
 		</div>
