@@ -156,6 +156,61 @@ void explode() {
 				</center>
 				<p>I haven't touched around with the code yet, so I'll have to do that.</p>
 			</div>
+			<div class = "Entry">
+				<h2>20:23 2014-12-01</h2>
+				<hr/>
+				<p>I just watched a great tutorial on LCDs on YouTube by a guy named <a style = "font-size: 16px" 
+				href = "https://www.youtube.com/channel/UCR6qP2sVBZUL4IJOXUhCofA">000Plasma000</a>, here is the link to 
+				the video: <a style = "font-size: 16px;" href = "https://www.youtube.com/watch?v=85LvW1QDLLw">
+				https://www.youtube.com/watch?v=85LvW1QDLLw</a></p>
+				<p>Anyway, what he talked about is some of the basic knowledge and commands people should know about LCDs. 
+				Some of the things that caught my eyes are the commands I didn't know about. Here a few of them:</p>
+				<p>Using <code class = "Single">.blink()</code> method from the LCD library will enable a blinking cursor. 
+				<code class = "Single">.noBlink()</code> will disable it.</p>
+				<center><img src = "http://www.emmanuelmorales.com/images/blinking-cursor.gif"/></center>
+				<p>Using <code class = "Single">.cursor()</code> will enable a regular underline cursor like "_". Similar to 
+				the blinking cursor, <code class = "Single">.noCursor()</code> method can be used to turn it off.</p>
+				<p>But perhaps one the of the coolest thing I've learnt today about the LCD is the ability to create custom characters. 
+				On a standard liquid crystal display, all characters are made of pixels. In this case each block on the LCD have a 5x8 
+				pixel pattern.</p>
+				<p>An array list of 0's and 1's can be created to make the character. It's kind of hard to explain so I'll just put the 
+				code to how to do it here:</p>
+				<pre><code><xmp>
+...... some code above here ......				
+				
+// Create a new list of pixels that's going to be enabled outside of everything.
+// A grid of 5x8 0's are created, they are the pixels on the LCD.
+// 0 means off and 1 means on.
+byte newCharacter[8] = {
+	B00000,
+	B00000,
+	B00000,
+	B00000,
+	B00000,
+	B00000,
+	B00000,
+	B00000
+};
+
+// SETUP
+void setup() {
+	lcd.begin(16, 2);
+	
+	// Use the .createChar() method to initate and store a new character into the LCD's memory
+	// The parameters are (the position of memory where the character should be stored, the name of the byte array)
+	lcd.createChar(1, newCharacter);
+}
+
+// LOOP
+void loop() {
+	// To display the character, use the .write() method 
+	// with the position of memory where the character is stored as the argument
+	lcd.write(1);
+}
+				
+				
+				</xmp></code></pre>
+			</div>
 			<a href = "#top" style = "font-size: 16px; float:right; margin-bottom: 20px;">GO TO TOP</a>
 		</div>
 	</body>
