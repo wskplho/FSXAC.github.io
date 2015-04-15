@@ -1,0 +1,85 @@
+<html lang="EN-CA">
+	<title> ZMR250 FLIGHT LOGBOOK </title>
+	<meta charset = "UTF-8">
+</head>
+
+<style>
+	h1 {
+		font-family: tahoma;
+		font-size: 50px;
+		color: orange;
+		margin: auto;
+		padding-left: 180px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	
+	span {
+		font-family: tahoma;
+		font-size: 16px;
+		color: orange;
+	}
+	
+	input, select, textarea {
+		width: 400px;
+		margin-bottom: 30px;
+		margin-top: 5px;
+		font-size: 16px;
+		font-family: tahoma;
+		background-color: rgb(60, 60, 60);
+		border-color: grey;
+		color: orange;
+		
+	]
+</style>
+
+<body style = "padding-bottom: 100px; background-color: rgb(10, 10, 10);">
+	<div style = "position:relative; width:100%; margin-right: 10px;">
+		<div style = "background-image:url('carbon_fiber.jpg')";>
+			<img src = "logo.png" style = "height:60px; float:left; padding-top: 10px; 
+			padding-bottom: 10px; margin-left: 10px;"/>
+			<h1> FLIGHT LOGBOOK </h1>
+		</div>
+	</div>
+	<hr style = "border-width:4px; border-style:inset; border-color:grey"/>
+	<div style = "text-align: center">
+		<div style = "margin-left:auto; margin-right:auto; display:inline-block; 
+		background-color:rgb(30, 30, 30); padding:10px; text-align: left;">
+			<span> DATE </span> <br> <input type="date" id = "date"/> <br>
+			<span> TIME </span> <br> <input type="time" id = "time"/> <br>
+			<span> WEATHER CONDITION </span> <br/> <input type="text" id = "wx"/> <br>
+			<span> LOCATION </span> <br> <input type="text" id = "loc"/> <br>
+			<span> FLIGHT NUMBER </span> <br> <input type="number" id = "fltno"/> <br>
+			<span> FLIGHT DURATION (MINUTES) </span> <br> <input type="number" id = "fltdur"/> <br>
+			<span> BATTERY NUMBER </span> <br> <select id = "batno">
+				<option value = "A1" id = "bat_A1"> A1 </option>
+				<option value = "A2" id = "bat_A2"> A2 </option>
+				<option value = "A3" id = "bat_A3"> A3 </option>
+				<option value = "A4" id = "bat_A4"> A4 </option>
+			</select> <br>
+			<span> CRASHED </span> <input type="checkbox" id = "isCrashed" style = "width:auto; height:auto;"/> <br>
+			<span> REASON OF CRASH </span> <br> <textarea id = "crash" disabled style = "height: 80px;"> </textarea> <br>
+			<span> DAMAGED </span> <input type="checkbox" id = "isDamaged" style = "width:auto; height:auto;"/> <br>
+			<span> DAMAGE </span> <br> <textarea  id = "damage" disabled style = "height: 80px;"> </textarea> <br>
+			<span> FPV </span> <input type="checkbox" id = "isFPV" style = "width:auto; height:auto;"/> <br>
+			<span> VIDEO </span> <input type="checkbox" id = "isVideo" style = "width:auto; height:auto;"/> <br>
+			<span> VIDEO LINK </span> <br> <input id = "v_link" disabled type="url"/> <br>
+			<span> ADDITIONAL COMMENTS </span> <br> <textarea id = "comments" style = "height: 80px;"> </textarea> <br>
+			<input type="submit" style = "height: 50px; margin-bottom: 0;"/> <br>
+		</div>
+	</div>
+</body>
+
+<script>
+	if (document.getElementById("isCrashed") == true) {
+		document.getElementById("crash").disabled = false;
+	}
+	
+	if (document.getElementById("isDamaged") == true) {
+		document.getElementById("damage").disabled = false;
+	}
+	
+	if (document.getElementById("isVideo") == true) {
+		document.getElementById("video").disabled = false;
+	}
+</script>
